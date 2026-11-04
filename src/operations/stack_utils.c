@@ -8,6 +8,6 @@ t_stack	*stacklast(t_stack *stack)
 		return (NULL);
 	last = stack;
 	while (last->next)
-		last = stack->next;
+		last = last->next;
 	return (last);
 }
