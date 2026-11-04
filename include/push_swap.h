@@ -21,5 +21,16 @@ int		push(t_stack **src, t_stack **dst);
 void	pa(t_stack **a, t_stack **b);
 void	pb(t_stack **a, t_stack **b);
 
+t_stack	*stacklast(t_stack *stack);
+
+int		rotate(t_stack **stack);
+void	ra(t_stack **a);
+void	rb(t_stack **b);
+void	rr(t_stack **a, t_stack **b);
+
+int		rrotate(t_stack **stack);
+void	rra(t_stack **a);
+void	rrb(t_stack **b);
+void	rrr(t_stack **a, t_stack **b);
 
 #endif
