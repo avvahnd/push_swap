@@ -39,14 +39,14 @@ void	append_node(t_stack **stack, t_stack *node)
 	node->prev = last;
 }
 
-t_stack	*initstack(int ac, char **av)
+t_stack	*initstack(int ac, char **av, int start)
 {
 	t_stack	*stack;
 	t_stack	*node;
 	int		i;
 
 	stack = NULL;
-	i = 1;
+	i = start;
 	while (i < ac)
 	{
 		node = mnode(ft_atoi(av[i]));

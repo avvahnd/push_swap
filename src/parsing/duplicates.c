@@ -1,11 +1,11 @@
 #include "../../include/push_swap.h"
 
-int	duplicates(int ac, char **av)
+int	duplicates(int ac, char **av, int start)
 {
 	int	i;
 	int	j;
 
-	i = 1;
+	i = start;
 	while (i < ac)
 	{
 		j = i + 1;

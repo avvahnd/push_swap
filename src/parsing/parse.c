@@ -44,11 +44,11 @@ int	overflow(char *str)
 	return (1);
 }
 
-int	validargs(int ac, char **av)
+int	validargs(int ac, char **av, int start)
 {
 	int	i;
 
-	i = 1;
+	i = start;
 	while (i < ac)
 	{
 		if (!overflow(av[i]))
