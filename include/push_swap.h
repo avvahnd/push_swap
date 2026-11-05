@@ -4,6 +4,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
+# include "../libft/libft.h"
 
 typedef struct s_stack
 {
@@ -37,5 +38,11 @@ int		number(char *str);
 int		overflow(char *str);
 int		validargs(int ac, char **av);
 
+int		duplicates(int ac, char **av);
+
+t_stack	*mnode(int value);
+void	free_stack(t_stack *stack);
+void	append_node(t_stack **stack, t_stack *node);
+t_stack	*initstack(int ac, char **av);
 
 #endif
