@@ -3,3 +3,5 @@
 push_swap
 checker
 .DS_Store
+test_push_swap
+checker_linux
