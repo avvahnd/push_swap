@@ -14,7 +14,7 @@ typedef struct s_stack
 
 int		swap(t_stack **stack);
 void	sa(t_stack **a);
-void	ab(t_stack **b);
+void	sb(t_stack **b);
 void	ss(t_stack **a, t_stack **b);
 
 int		push(t_stack **src, t_stack **dst);
@@ -32,5 +32,10 @@ int		rrotate(t_stack **stack);
 void	rra(t_stack **a);
 void	rrb(t_stack **b);
 void	rrr(t_stack **a, t_stack **b);
+
+int		number(char *str);
+int		overflow(char *str);
+int		validargs(int ac, char **av);
+
 
 #endif
