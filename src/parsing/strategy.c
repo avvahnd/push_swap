@@ -6,9 +6,9 @@ t_strategy	pstrategy(char *arg)
 		return (SIMPLE);
 	if (ft_strncmp(arg, "--medium", 9) == 0)
 		return (MEDIUM);
-	if (ft_strncmp(arg, "--complex", 9) == 0)
+	if (ft_strncmp(arg, "--complex", 10) == 0)
 		return (COMPLEX);
-	if (ft_strncmp(arg, "--adaptive", 9) == 0)
+	if (ft_strncmp(arg, "--adaptive", 11) == 0)
 		return (ADAPTIVE);
 	return (INVALID);
 }
