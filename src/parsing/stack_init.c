@@ -8,6 +8,7 @@ t_stack	*mnode(int value)
 	if (!node)
 		return (NULL);
 	node->value = value;
+	node->index = -1;
 	node->next = NULL;
 	node->prev = NULL;
 	return (node);
